@@ -18,6 +18,14 @@
         exit(10);
     }
 
+    function delete_comment($line) {
+        $comment = strpos($line, '#');
+        if ($comment !== false) {
+            $line = substr($line, 0, $comment);
+        }
+        return $line;
+    }
+
     //////////////////// PARSE ////////////////////
     generate_header();
 
@@ -32,7 +40,6 @@
                 exit(21);
             }
         }
-        //TODO komentar dat prec
         $token = explode(' ', trim($line, "\n"));
         delete_comments($token);
         
@@ -73,7 +80,29 @@
                 break;
             // <var> <type>
             case "READ" :
-                generate_var_type($token[0], $token[1], $token[2] $order_counter);
+                generate_var_type($token[0], $token[1], $token[2], $order_counter);
+                break;
+            // <var> <symb1> <symb2>
+            case "ADD" :
+            case "SUB" :
+            case "MUL" :
+            case "IDIV" :
+            case "LT" :
+            case "GT" :
+            case "EQ" :
+            case "AND" :
+            case "OR" :
+            case "NOT" :
+            case "STRI2INT" :
+            case "CONCAT" :
+            case "GETCHAR" :
+            case "SETCHAR" :
+                generate_var_symb_symb($token[0], $token[1], $token[2], $token[3], $order_counter);
+                break;
+            // <label> <symb1> <symb2>
+            case "JUMPIFEQ" :
+            case "JUMPIFNEQ" :
+                generate_label_symb_symb($token[0], $token[1], $token[2], $token[3], $order_counter);
                 break;
             default :
                 exit(22);

@@ -1,13 +1,5 @@
 <?php
 
-function delete_comment($line) {
-    $comment = strpos($line, '#');
-    if ($comment !== false) {
-        $line = substr($line, 0, $comment);
-    }
-    return $line;
-}
-
 function variable_regex($var) {
     return preg_match('/^(GF|LF|TF)@([a-zA-Z]|[_&%$*!?-])[a-zA-Z0-9]*$/', $var);
 }
@@ -40,6 +32,5 @@ function symbol_regex($symbol) {
         return false;
     }
 }
-
 
 ?>
