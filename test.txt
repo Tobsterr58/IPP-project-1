@@ -1,0 +1,8 @@
+.IPPcode23
+
+CREATEFRAME # příklad instrukce bez operandů, v XML možný zápis delším způsobem
+DEFVAR TF@x
+PUSHFRAME
+CREATEFRAME
+WRITE TF@x  # přístup k nedefinované proměnné, což se v parse.php neodhalí
+POPFRAME # tato instrukce bude pro ilustraci ve výstupním XML zapsána kratším způsobem
