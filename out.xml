@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<program language="IPPcode23">
+	<instruction order="1" opcode="CREATEFRAME">
+	</instruction>
+	<instruction order="1" opcode="DEFVAR">
+		<arg1 type="var">TF@x</arg1>
+	</instruction>
+	<instruction order="1" opcode="PUSHFRAME">
+	</instruction>
+	<instruction order="1" opcode="CREATEFRAME">
+	</instruction>
+	<instruction order="1" opcode="WRITE">
+		<arg1 type="symb">TF@x</arg1>
+	</instruction>
+	<instruction order="1" opcode="POPFRAME">
+	</instruction>
+</program>
+

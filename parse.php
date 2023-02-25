@@ -1,6 +1,6 @@
 <?php
-    require 'regex.php';
-    require 'generate.php';
+    include_once 'regex.php';
+    include_once 'generate.php';
 
     ini_set('display_errors', 'stderr');
 
@@ -17,22 +17,14 @@
     elseif ($argc > 2) {
         exit(10);
     }
-
-    function delete_comment($line) {
-        $comment = strpos($line, '#');
-        if ($comment !== false) {
-            $line = substr($line, 0, $comment);
-        }
-        return $line;
-    }
-
     //////////////////// PARSE ////////////////////
     generate_header();
 
     $header = false;
+    $START = ".IPPcode23";
     while ($line = fgets(STDIN)) {
-        if ($header = false) {
-            if ($line == ".IPPcode23") {
+        if ($header == false) {
+            if ($START == ".IPPcode23") {
                 $header = true;
                 generate_program();
             }
@@ -41,8 +33,12 @@
             }
         }
         $token = explode(' ', trim($line, "\n"));
-        delete_comments($token);
-        
+
+    $comment = strpos($line, '#');
+        if ($comment !== false) {
+            $line = substr($line, 0, $comment);
+        }
+
         $order_counter = 1;
         switch(strtoupper($token[0])) {
             // OPCODE
@@ -103,6 +99,8 @@
             case "JUMPIFEQ" :
             case "JUMPIFNEQ" :
                 generate_label_symb_symb($token[0], $token[1], $token[2], $token[3], $order_counter);
+                break;
+            case ".IPPCODE23" :
                 break;
             default :
                 exit(22);

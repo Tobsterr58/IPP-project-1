@@ -1,5 +1,4 @@
 .IPPcode23
-
 CREATEFRAME # příklad instrukce bez operandů, v XML možný zápis delším způsobem
 DEFVAR TF@x
 PUSHFRAME
