@@ -34,7 +34,7 @@ function generate_var($instruction, $var, $order_counter) {
 function generate_label($instruction, $label, $order_counter) {
     if (label_regex($label)) {
         echo "\t<instruction order=\"$order_counter\" opcode=\"$instruction\">\n";
-        echo "\t\t<arg1 type=\"label\">$label</arg1>\n";
+        echo "\t\t<arg1 type=\"label\">".strtr($label, ["&" => "&amp;"])."</arg1>\n";
         echo "\t</instruction>\n";
     }
     else {
@@ -45,7 +45,20 @@ function generate_label($instruction, $label, $order_counter) {
 function generate_symb($instruction, $symb, $order_counter) {
     if (symbol_regex($symb)) {
         echo "\t<instruction order=\"$order_counter\" opcode=\"$instruction\">\n";
-        echo "\t\t<arg1 type=\"symb\">$symb</arg1>\n";
+        if (strpos($symb, "@") !== false) {
+            if(variable_regex($symb)) {
+                echo "\t\t<arg1 type=\"var\">$symb</arg1>\n";
+            }
+            else {
+                $symb = explode("@", $symb);
+
+                echo "\t\t<arg1 type=\"$symb[0]\">".strtr($symb[1], ["<" => "&lt;", ">" => "&gt;", "&" => "&amp;"])."</arg1>\n";
+            }
+        }
+        else {
+            echo "\t\t<arg1 type=\"symb\">$symb</arg1>\n";
+        }
+        //echo "\t\t<arg1 type=\"symb\">$symb</arg1>\n";
         echo "\t</instruction>\n";
     }
     else {
@@ -57,7 +70,14 @@ function generate_var_symb($instruction, $var, $symb, $order_counter) {
     if (variable_regex($var) && symbol_regex($symb)) {
         echo "\t<instruction order=\"$order_counter\" opcode=\"$instruction\">\n";
         echo "\t\t<arg1 type=\"var\">$var</arg1>\n";
-        echo "\t\t<arg2 type=\"symb\">$symb</arg2>\n";
+        if (strpos($symb, "@") !== false) {
+            $symb = explode("@", $symb);
+            echo "\t\t<arg2 type=\"$symb[0]\">$symb[1]</arg2>\n";
+        }
+        else {
+            echo "\t\t<arg2 type=\"symb\">$symb</arg2>\n";
+        }
+        //echo "\t\t<arg2 type=\"symb\">$symb</arg2>\n";
         echo "\t</instruction>\n";
     }
     else {

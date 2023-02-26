@@ -10,7 +10,7 @@ function variable_regex($var) {
 }
 
 function label_regex($label) {
-    if (preg_match('/^([a-zA-Z]|[_&%$*!?-])[a-zA-Z0-9]*$/', $label)) {
+    if (preg_match('/^([a-zA-Z]|[_&%$*!?-]+)[a-zA-Z0-9]*$/', $label)) {
         return true;
     }
     else {

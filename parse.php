@@ -33,12 +33,22 @@
                 exit(21);
             }
         }
-        $token = explode(' ', trim($line, "\n"));
-
-    $comment = strpos($line, '#');
-        if ($comment !== false) {
-            $line = substr($line, 0, $comment);
+        
+        if (strpos($line, "#") !== false) {
+            $line = explode("#", $line);
+            $line = $line[0];
         }
+        
+        if (empty($line)) {
+            continue;
+        }
+
+        $token = explode(' ', trim($line, "\n"));
+        
+        if (count($token) > 4) {
+            exit(23);
+        }
+
 
         switch(strtoupper($token[0])) {
             // OPCODE
