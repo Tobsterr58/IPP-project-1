@@ -2355,51 +2355,13 @@ Got:
     [32mGENERATED/concat/simple3135[0m
     [32mGENERATED/concat/simple234[0m
   [34mGENERATED/int2char[0m
-    [31mGENERATED/int2char/simple230[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="INT2CHAR">
-  <arg1 type="var">GF@var</arg1>
-  <arg2 type="bool">true</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="INT2CHAR">
-		<arg1 type="var">GF@var</arg1>
-		<arg2 type="symb">bool@true</arg2>
-	</instruction>
-</program>
-
-
+    [32mGENERATED/int2char/simple230[0m
     [32mGENERATED/int2char/simple213[0m
     [32mGENERATED/int2char/simple15[0m
     [32mGENERATED/int2char/simple14[0m
     [32mGENERATED/int2char/simple29[0m
     [32mGENERATED/int2char/simple228[0m
-    [31mGENERATED/int2char/simple233[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="INT2CHAR">
-  <arg1 type="var">GF@var</arg1>
-  <arg2 type="nil">nil</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="INT2CHAR">
-		<arg1 type="var">GF@var</arg1>
-		<arg2 type="symb">nil@nil</arg2>
-	</instruction>
-</program>
-
-
+    [32mGENERATED/int2char/simple233[0m
     [32mGENERATED/int2char/simple217[0m
     [32mGENERATED/int2char/simple22[0m
     [32mGENERATED/int2char/simple25[0m
@@ -2409,26 +2371,7 @@ Got:
     [32mGENERATED/int2char/simple211[0m
     [32mGENERATED/int2char/simple28[0m
     [32mGENERATED/int2char/simple223[0m
-    [31mGENERATED/int2char/simple231[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="INT2CHAR">
-  <arg1 type="var">GF@var</arg1>
-  <arg2 type="string">a</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="INT2CHAR">
-		<arg1 type="var">GF@var</arg1>
-		<arg2 type="symb">string@a</arg2>
-	</instruction>
-</program>
-
-
+    [32mGENERATED/int2char/simple231[0m
     [32mGENERATED/int2char/simple229[0m
     [32mGENERATED/int2char/simple26[0m
     [32mGENERATED/int2char/simple221[0m
@@ -2456,7 +2399,7 @@ Got:
 <program language="IPPcode23">
 	<instruction order="1" opcode="INT2CHAR">
 		<arg1 type="var">GF@var</arg1>
-		<arg2 type="symb">GF@var</arg2>
+		<arg2 type="GF">var</arg2>
 	</instruction>
 </program>
 
@@ -2468,26 +2411,7 @@ Got:
     [32mGENERATED/int2char/simple10[0m
     [32mGENERATED/int2char/simple224[0m
     [32mGENERATED/int2char/simple227[0m
-    [31mGENERATED/int2char/simple232[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="INT2CHAR">
-  <arg1 type="var">GF@var</arg1>
-  <arg2 type="int">42</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="INT2CHAR">
-		<arg1 type="var">GF@var</arg1>
-		<arg2 type="symb">int@42</arg2>
-	</instruction>
-</program>
-
-
+    [32mGENERATED/int2char/simple232[0m
     [32mGENERATED/int2char/simple222[0m
     [32mGENERATED/int2char/simple212[0m
     [32mGENERATED/int2char/simple11[0m
@@ -4849,51 +4773,13 @@ Got:
     [32mGENERATED/sub/simple3135[0m
     [32mGENERATED/sub/simple234[0m
   [34mGENERATED/strlen[0m
-    [31mGENERATED/strlen/simple230[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="STRLEN">
-  <arg1 type="var">GF@var</arg1>
-  <arg2 type="bool">true</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="STRLEN">
-		<arg1 type="var">GF@var</arg1>
-		<arg2 type="symb">bool@true</arg2>
-	</instruction>
-</program>
-
-
+    [32mGENERATED/strlen/simple230[0m
     [32mGENERATED/strlen/simple213[0m
     [32mGENERATED/strlen/simple15[0m
     [32mGENERATED/strlen/simple14[0m
     [32mGENERATED/strlen/simple29[0m
     [32mGENERATED/strlen/simple228[0m
-    [31mGENERATED/strlen/simple233[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="STRLEN">
-  <arg1 type="var">GF@var</arg1>
-  <arg2 type="nil">nil</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="STRLEN">
-		<arg1 type="var">GF@var</arg1>
-		<arg2 type="symb">nil@nil</arg2>
-	</instruction>
-</program>
-
-
+    [32mGENERATED/strlen/simple233[0m
     [32mGENERATED/strlen/simple217[0m
     [32mGENERATED/strlen/simple22[0m
     [32mGENERATED/strlen/simple25[0m
@@ -4903,26 +4789,7 @@ Got:
     [32mGENERATED/strlen/simple211[0m
     [32mGENERATED/strlen/simple28[0m
     [32mGENERATED/strlen/simple223[0m
-    [31mGENERATED/strlen/simple231[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="STRLEN">
-  <arg1 type="var">GF@var</arg1>
-  <arg2 type="string">a</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="STRLEN">
-		<arg1 type="var">GF@var</arg1>
-		<arg2 type="symb">string@a</arg2>
-	</instruction>
-</program>
-
-
+    [32mGENERATED/strlen/simple231[0m
     [32mGENERATED/strlen/simple229[0m
     [32mGENERATED/strlen/simple26[0m
     [32mGENERATED/strlen/simple221[0m
@@ -4950,7 +4817,7 @@ Got:
 <program language="IPPcode23">
 	<instruction order="1" opcode="STRLEN">
 		<arg1 type="var">GF@var</arg1>
-		<arg2 type="symb">GF@var</arg2>
+		<arg2 type="GF">var</arg2>
 	</instruction>
 </program>
 
@@ -4962,26 +4829,7 @@ Got:
     [32mGENERATED/strlen/simple10[0m
     [32mGENERATED/strlen/simple224[0m
     [32mGENERATED/strlen/simple227[0m
-    [31mGENERATED/strlen/simple232[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="STRLEN">
-  <arg1 type="var">GF@var</arg1>
-  <arg2 type="int">42</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="STRLEN">
-		<arg1 type="var">GF@var</arg1>
-		<arg2 type="symb">int@42</arg2>
-	</instruction>
-</program>
-
-
+    [32mGENERATED/strlen/simple232[0m
     [32mGENERATED/strlen/simple222[0m
     [32mGENERATED/strlen/simple212[0m
     [32mGENERATED/strlen/simple11[0m
@@ -5866,51 +5714,13 @@ Got:
     [32mGENERATED/setchar/simple3135[0m
     [32mGENERATED/setchar/simple234[0m
   [34mGENERATED/type[0m
-    [31mGENERATED/type/simple230[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="TYPE">
-  <arg1 type="var">GF@var</arg1>
-  <arg2 type="bool">true</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="TYPE">
-		<arg1 type="var">GF@var</arg1>
-		<arg2 type="symb">bool@true</arg2>
-	</instruction>
-</program>
-
-
+    [32mGENERATED/type/simple230[0m
     [32mGENERATED/type/simple213[0m
     [32mGENERATED/type/simple15[0m
     [32mGENERATED/type/simple14[0m
     [32mGENERATED/type/simple29[0m
     [32mGENERATED/type/simple228[0m
-    [31mGENERATED/type/simple233[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="TYPE">
-  <arg1 type="var">GF@var</arg1>
-  <arg2 type="nil">nil</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="TYPE">
-		<arg1 type="var">GF@var</arg1>
-		<arg2 type="symb">nil@nil</arg2>
-	</instruction>
-</program>
-
-
+    [32mGENERATED/type/simple233[0m
     [32mGENERATED/type/simple217[0m
     [32mGENERATED/type/simple22[0m
     [32mGENERATED/type/simple25[0m
@@ -5920,26 +5730,7 @@ Got:
     [32mGENERATED/type/simple211[0m
     [32mGENERATED/type/simple28[0m
     [32mGENERATED/type/simple223[0m
-    [31mGENERATED/type/simple231[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="TYPE">
-  <arg1 type="var">GF@var</arg1>
-  <arg2 type="string">a</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="TYPE">
-		<arg1 type="var">GF@var</arg1>
-		<arg2 type="symb">string@a</arg2>
-	</instruction>
-</program>
-
-
+    [32mGENERATED/type/simple231[0m
     [32mGENERATED/type/simple229[0m
     [32mGENERATED/type/simple26[0m
     [32mGENERATED/type/simple221[0m
@@ -5967,7 +5758,7 @@ Got:
 <program language="IPPcode23">
 	<instruction order="1" opcode="TYPE">
 		<arg1 type="var">GF@var</arg1>
-		<arg2 type="symb">GF@var</arg2>
+		<arg2 type="GF">var</arg2>
 	</instruction>
 </program>
 
@@ -5979,26 +5770,7 @@ Got:
     [32mGENERATED/type/simple10[0m
     [32mGENERATED/type/simple224[0m
     [32mGENERATED/type/simple227[0m
-    [31mGENERATED/type/simple232[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="TYPE">
-  <arg1 type="var">GF@var</arg1>
-  <arg2 type="int">42</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="TYPE">
-		<arg1 type="var">GF@var</arg1>
-		<arg2 type="symb">int@42</arg2>
-	</instruction>
-</program>
-
-
+    [32mGENERATED/type/simple232[0m
     [32mGENERATED/type/simple222[0m
     [32mGENERATED/type/simple212[0m
     [32mGENERATED/type/simple11[0m
@@ -12835,190 +12607,19 @@ Got:
 
 [34mstring[0m
   [32mstring/slash[0m
-  [31mstring/ok[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="MOVE">
-  <arg1 type="var">GF@counter</arg1>
-  <arg2 type="string">abc</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="MOVE">
-		<arg1 type="var">GF@counter</arg1>
-		<arg2 type="symb">string@abc</arg2>
-	</instruction>
-</program>
-
-
-  [31mstring/numbers[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="MOVE">
-  <arg1 type="var">GF@counter</arg1>
-  <arg2 type="string">1234a</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="MOVE">
-		<arg1 type="var">GF@counter</arg1>
-		<arg2 type="symb">string@1234a</arg2>
-	</instruction>
-</program>
-
-
-  [31mstring/long[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="MOVE">
-  <arg1 type="var">GF@counter</arg1>
-  <arg2 type="string">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="MOVE">
-		<arg1 type="var">GF@counter</arg1>
-		<arg2 type="symb">string@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</arg2>
-	</instruction>
-</program>
-
-
-  [31mstring/empty[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="MOVE">
-  <arg1 type="var">GF@counter</arg1>
-  <arg2 type="string"></arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="MOVE">
-		<arg1 type="var">GF@counter</arg1>
-		<arg2 type="symb">string@</arg2>
-	</instruction>
-</program>
-
-
+  [32mstring/ok[0m
+  [32mstring/numbers[0m
+  [32mstring/long[0m
+  [32mstring/empty[0m
   [31mstring/comment[0m
 Expected return code: 0, got: 23
 
-  [31mstring/escape2[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="MOVE">
-  <arg1 type="var">GF@counter</arg1>
-  <arg2 type="string">řetězec\0322s\032lomítkem\032\092\032a\010novým\035řádkem</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="MOVE">
-		<arg1 type="var">GF@counter</arg1>
-		<arg2 type="symb">string@řetězec\0322s\032lomítkem\032\092\032a\010novým\035řádkem</arg2>
-	</instruction>
-</program>
-
-
-  [31mstring/escape4[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="MOVE">
-  <arg1 type="var">GF@counter</arg1>
-  <arg2 type="string">řetězec\000\032lomítkem\032\092\032a\010novým\035řádkem</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="MOVE">
-		<arg1 type="var">GF@counter</arg1>
-		<arg2 type="symb">string@řetězec\000\032lomítkem\032\092\032a\010novým\035řádkem</arg2>
-	</instruction>
-</program>
-
-
-  [31mstring/escape[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="MOVE">
-  <arg1 type="var">GF@counter</arg1>
-  <arg2 type="string">řetězec\032s\032lomítkem\032\092\032a\010novým\035řádkem</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="MOVE">
-		<arg1 type="var">GF@counter</arg1>
-		<arg2 type="symb">string@řetězec\032s\032lomítkem\032\092\032a\010novým\035řádkem</arg2>
-	</instruction>
-</program>
-
-
-  [31mstring/escape3[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="MOVE">
-  <arg1 type="var">GF@counter</arg1>
-  <arg2 type="string">řetězec\126\032lomítkem\032\092\032a\010novým\035řádkem</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="MOVE">
-		<arg1 type="var">GF@counter</arg1>
-		<arg2 type="symb">string@řetězec\126\032lomítkem\032\092\032a\010novým\035řádkem</arg2>
-	</instruction>
-</program>
-
-
+  [32mstring/escape2[0m
+  [32mstring/escape4[0m
+  [32mstring/escape[0m
+  [32mstring/escape3[0m
   [32mstring/escape1[0m
-  [31mstring/utf[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="MOVE">
-  <arg1 type="var">GF@counter</arg1>
-  <arg2 type="string">čššěčěřýýážá=í=éú)ů§-,;</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="MOVE">
-		<arg1 type="var">GF@counter</arg1>
-		<arg2 type="symb">string@čššěčěřýýážá=í=éú)ů§-,;</arg2>
-	</instruction>
-</program>
-
-
+  [32mstring/utf[0m
 [34mpops[0m
   [32mpops/nil[0m
   [32mpops/var[0m
@@ -13038,26 +12639,7 @@ Expected return code: 23, got: 0
 
   [32mmove/1operand[0m
   [32mmove/symbSymb[0m
-  [31mmove/ok[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="MOVE">
-  <arg1 type="var">GF@counter</arg1>
-  <arg2 type="int">42</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="MOVE">
-		<arg1 type="var">GF@counter</arg1>
-		<arg2 type="symb">int@42</arg2>
-	</instruction>
-</program>
-
-
+  [32mmove/ok[0m
   [31mmove/varVar[0m
 Expected:
 <?xml version="1.0" encoding="UTF-8"?>
@@ -13073,7 +12655,7 @@ Got:
 <program language="IPPcode23">
 	<instruction order="1" opcode="MOVE">
 		<arg1 type="var">GF@counter</arg1>
-		<arg2 type="symb">GF@counter</arg2>
+		<arg2 type="GF">counter</arg2>
 	</instruction>
 </program>
 
@@ -13215,132 +12797,18 @@ Expected return code: 23, got: 0
 [34mnil[0m
   [32mnil/upper[0m
   [32mnil/bad1[0m
-  [31mnil/ok[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="MOVE">
-  <arg1 type="var">GF@counter</arg1>
-  <arg2 type="nil">nil</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="MOVE">
-		<arg1 type="var">GF@counter</arg1>
-		<arg2 type="symb">nil@nil</arg2>
-	</instruction>
-</program>
-
-
+  [32mnil/ok[0m
   [32mnil/nill[0m
   [32mnil/no@[0m
 [34mint[0m
-  [31mint/ok[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="MOVE">
-  <arg1 type="var">GF@counter</arg1>
-  <arg2 type="int">0</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="MOVE">
-		<arg1 type="var">GF@counter</arg1>
-		<arg2 type="symb">int@0</arg2>
-	</instruction>
-</program>
-
-
-  [31mint/ok3[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="MOVE">
-  <arg1 type="var">GF@counter</arg1>
-  <arg2 type="int">+12</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="MOVE">
-		<arg1 type="var">GF@counter</arg1>
-		<arg2 type="symb">int@+12</arg2>
-	</instruction>
-</program>
-
-
+  [32mint/ok[0m
+  [32mint/ok3[0m
   [32mint/empty[0m
   [32mint/cases[0m
-  [31mint/ok1[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="MOVE">
-  <arg1 type="var">GF@counter</arg1>
-  <arg2 type="int">12</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="MOVE">
-		<arg1 type="var">GF@counter</arg1>
-		<arg2 type="symb">int@12</arg2>
-	</instruction>
-</program>
-
-
-  [31mint/ok2[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="MOVE">
-  <arg1 type="var">GF@counter</arg1>
-  <arg2 type="int">-12</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="MOVE">
-		<arg1 type="var">GF@counter</arg1>
-		<arg2 type="symb">int@-12</arg2>
-	</instruction>
-</program>
-
-
+  [32mint/ok1[0m
+  [32mint/ok2[0m
   [32mint/no@[0m
-  [31mint/longInt[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="MOVE">
-  <arg1 type="var">GF@counter</arg1>
-  <arg2 type="int">55555555555555555555555555555555555555555555555555555555555555555555555555555555555555555</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="MOVE">
-		<arg1 type="var">GF@counter</arg1>
-		<arg2 type="symb">int@55555555555555555555555555555555555555555555555555555555555555555555555555555555555555555</arg2>
-	</instruction>
-</program>
-
-
+  [32mint/longInt[0m
 [34mbasic[0m
   [31mbasic/simple_tag[0m
 Expected return code: 0, got: 22
@@ -13353,47 +12821,9 @@ Expected return code: 0, got: 23
 
 [34mbool[0m
   [32mbool/cases[0m
-  [31mbool/true[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="MOVE">
-  <arg1 type="var">GF@counter</arg1>
-  <arg2 type="bool">true</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="MOVE">
-		<arg1 type="var">GF@counter</arg1>
-		<arg2 type="symb">bool@true</arg2>
-	</instruction>
-</program>
-
-
+  [32mbool/true[0m
   [32mbool/0[0m
-  [31mbool/false[0m
-Expected:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
- <instruction order="1" opcode="MOVE">
-  <arg1 type="var">GF@counter</arg1>
-  <arg2 type="bool">false</arg2>
- </instruction>
-</program>
-
-Got:
-<?xml version="1.0" encoding="UTF-8"?>
-<program language="IPPcode23">
-	<instruction order="1" opcode="MOVE">
-		<arg1 type="var">GF@counter</arg1>
-		<arg2 type="symb">bool@false</arg2>
-	</instruction>
-</program>
-
-
+  [32mbool/false[0m
   [32mbool/no@[0m
 
-Tests finished with [31m474 failed tests[0m and [32m3845 passed tests[0m
+Tests finished with [31m444 failed tests[0m and [32m3875 passed tests[0m
