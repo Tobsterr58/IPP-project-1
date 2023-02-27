@@ -21,48 +21,56 @@
     generate_header();
 
     $header = false;
-    $START = ".IPPcode23";
     $order_counter = 1;
     while ($line = fgets(STDIN)) {
-        if ($header == false) {
-            if ($START == ".IPPcode23") {
-                $header = true;
-                generate_program();
-            }
-            else {
-                exit(21);
-            }
-        }
         
         if (strpos($line, "#") !== false) {
             $line = explode("#", $line);
             $line = $line[0];
         }
         
+        $line = trim($line);
+        $token = preg_split('/\s+/', $line);
+        
         if (empty($line)) {
             continue;
         }
-
-        $token = explode(' ', trim($line, "\n"));
+        
+        
+        if ($header === false) {
+            if ($line == ".IPPcode23") {
+                $header = true;
+                generate_program();
+            }
+            else {
+                exit(21);
+            }
+        } 
+        else {
+            if ($line == ".IPPcode23") {
+                exit(22);
+            }
+        }
         
         if (count($token) > 4) {
             exit(23);
         }
 
-
-        switch(strtoupper($token[0])) {
+        switch($token[0] = strtoupper($token[0])) {
             // OPCODE
             case "CREATEFRAME" :
             case "PUSHFRAME" :
             case "POPFRAME" :
             case "RETURN" :
             case "BREAK" :
+                check_one(count($token));
                 generate_instruction($token[0], $order_counter);
                 $order_counter++;
                 break;
             // <var>
             case "DEFVAR" :
-            case "POPS" :
+            case "POPS" :       
+                check_two(count($token));
                 generate_var($token[0], $token[1], $order_counter);
                 $order_counter++;
                 break;
@@ -70,6 +78,7 @@
             case "CALL" :
             case "LABEL" :
             case "JUMP" :
+                check_two(count($token));
                 generate_label($token[0], $token[1], $order_counter);
                 $order_counter++;
                 break;
@@ -78,6 +87,7 @@
             case "WRITE" :
             case "EXIT" :
             case "DPRINT" :
+                check_two(count($token));
                 generate_symb($token[0], $token[1], $order_counter);
                 $order_counter++;
                 break;
@@ -86,11 +96,13 @@
             case "INT2CHAR" :
             case "STRLEN" :
             case "TYPE" :
+                check_three(count($token));
                 generate_var_symb($token[0], $token[1], $token[2], $order_counter);
                 $order_counter++;
                 break;
             // <var> <type>
             case "READ" :
+                check_three(count($token));
                 generate_var_type($token[0], $token[1], $token[2], $order_counter);
                 $order_counter++;
                 break;
@@ -109,12 +121,20 @@
             case "CONCAT" :
             case "GETCHAR" :
             case "SETCHAR" :
-                generate_var_symb_symb($token[0], $token[1], $token[2], $token[3], $order_counter);
+                if($token[0] == "NOT") {
+                    check_three(count($token));
+                    generate_var_symb($token[0], $token[1], $token[2], $order_counter);
+                }
+                else {
+                    check_four(count($token));
+                    generate_var_symb_symb($token[0], $token[1], $token[2], $token[3], $order_counter);
+                }
                 $order_counter++;
                 break;
             // <label> <symb1> <symb2>
             case "JUMPIFEQ" :
             case "JUMPIFNEQ" :
+                check_four(count($token));
                 generate_label_symb_symb($token[0], $token[1], $token[2], $token[3], $order_counter);
                 $order_counter++;
                 break;
