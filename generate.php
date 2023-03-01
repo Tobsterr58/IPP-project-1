@@ -42,12 +42,12 @@ function check_four ($arguments) {
 /////////// SYMB TO VAR OR TYPE /////
 
 function symb_to ($symb, $arg_counter) {
-    if (symbol_regex($symb)==="var") {
-        echo "\t\t<arg$arg_counter type=\"var\">$symb</arg$arg_counter>\n";
+    if (symbol_regex($symb)==="var") { //check if symb is var
+        echo "\t\t<arg$arg_counter type=\"var\">$symb</arg$arg_counter>\n"; //generate var tag
     }
     else {
-        $symb = explode ("@", $symb);
-        echo "\t\t<arg$arg_counter type=\"$symb[0]\">".strtr($symb[1], ["<" => "&lt;", ">" => "&gt;", "&" => "&amp;"])."</arg$arg_counter>\n";
+        $symb = explode ("@", $symb); //split symb to type and value
+        echo "\t\t<arg$arg_counter type=\"$symb[0]\">".strtr($symb[1], ["<" => "&lt;", ">" => "&gt;", "&" => "&amp;"])."</arg$arg_counter>\n"; //generate symb tag and convert special characters   
     }
 }
 
@@ -74,7 +74,7 @@ function generate_instruction($instruction, $order_counter) {
 function generate_var($instruction, $var, $order_counter) {
     if (variable_regex($var)) {
         echo "\t<instruction order=\"$order_counter\" opcode=\"$instruction\">\n";
-        echo "\t\t<arg1 type=\"var\">".strtr($var, ["<" => "&lt;", ">" => "&gt;", "&" => "&amp;"])."</arg1>\n";
+        echo "\t\t<arg1 type=\"var\">".strtr($var, ["<" => "&lt;", ">" => "&gt;", "&" => "&amp;"])."</arg1>\n"; //convert special characters and generate var tag
         echo "\t</instruction>\n";
     }
     else {
